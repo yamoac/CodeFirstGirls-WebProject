@@ -1,83 +1,74 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Receipe Room</title>
-  <link rel="stylesheet" type="text/css" href="css/styles.css"
+  <title>Recipe Room</title>
+  <link href='css/bootstrap.css' rel='stylesheet'>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
 </head>
 
 <body>
+<div class=“container”>
+  <div class='jumbotron'>
+    <div class="row">
+	 <div class="col-sm-4">
+    <img class='img-responsive' src='images/sandwich.png'>
+  </div>
+      <div class="col-sm-8">
+        <h1>Recipe Room</h1>
+      </div>
+</div>
 
-  <h1>Chanel's HTML Page</h1>
+    <form role='form'>
+      <label for="email">Find out more</label>
+      <input type="text" name="email"
+      <meta name="viewport" content="width=device-width,
+initial-scale=1.0"> >
+      <button class="btn btn-success" type="submit">Send</button>
+    </form>
+  </div>
 
-  <h2>BLOG</h2>
+  <div id="buzz">
+    <h2><small>The Buzz</small><br />What are people saying?</h2>
+    <div class="row">
+      <div class="col-sm-4">
 
-  <p>In HTML headings are marked with using heading tags such h1. There are six levels of heading supported. The biggest is h1 which is used for page titles. The smallest is h6. On most pages you probably won't see h4-6 used.</p>
-
-  <p>Paragraphs are separated using p tags. This automatically separates them into blocks, leaving a gap in between.</p>
-
-  <p>Within a paragraph you can make text <strong>bold</strong> or <em>italic</em>. In fact it's probably bad to think of these as bold and italic - instead you should genuinely consider them as 'strong' and 'emphasised' - you can decide exactly how to display them in you css, bold and italic are just the defaults. This is an example of <em>symantic markup</em>: you're adding information as to the interpretation of certain words, rather than dictating how they should be displayed.</p>
-
-  <h2>Blank lines and void tags</h2>
-
-  <p>It is also possible to insert extra blank lines manually using the br tag. The br tag is a special type of tag (called a 'void tag'); you don't need a closing br tag, just un opening one.</p>
-
-  <br>
-
-  <h2>Comments</h2>
-
-  <p>You can write comments in your html code, which won't be displayed in the browser.</p>
-
-  <!--- This is a comment. It won't show up in the page, but you will be able to see it if you view the page source (be warned!) -->
-
-
-  <h2>Lists</h2>
-  <p>Html has two basic types of list:</p>
-
-  <ol>
-    <li>Ordered lists (&lt;ol&gt;) - displays a numbered list</li>
-    <li>Unordered lists (&lt;ul&gt;) - displays a list of bullet points</li>
-  </ol>
-
-  <p>Both have the same basic structure.</p>
-
-  <ul>
-    <li>An opening list tag</li>
-    <li>Many list items (li)</li>
-    <li>A closing list tags</li>
-  </ul>
-
-  <p>You don't often see lists in their basic form, but lists are heavily used in websites; dropdown menus are often cleverly styled lists.</p>
-
-  <h2>Links</h2>
-  <p>Links look like this: <a href="http://www.facebook.com">link to facebook</a>. You specify where you want the link to point by specifying the 'href' inside the &lt;a&gt; tag.</p>
-
-  <p>The href can also point to local files. For example, <a href="./example.html">this</a> is a link to this page you're reading at the moment. Notice that the protocol and host part of the URL has been replaced by a "."</p>
-
-  <h2>Images</h2>
-  <p>Images are a bit like links. You specify the location of the image with the 'src' property in the &lt;img&gt; tag. Note that img tags are like br tags: they don't come in pairs. The 'alt' property should be used to provide a description of the image in case it won't load or the user is partially sighted.</p>
-
-  <p>Images can be stored on the same host ... </p>
-  <img src="./Grad 1.jpg" alt="A local image">
-
-  <p>... or on another server entirely.</p>
-  <img src="data:image/png;base64,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" alt="Chanel Logo.">
+      <img class="img-circle" src='images/person.jpg'>
+      <blockquote
+      <p>These sandwiches are the best I've ever tasted, for sure. I now eat them every day - breakfast, lunch and dinner.</p>
+      <small>Mr Smith, Professional sandwich taster</small>
+    </blockquote>
+    </div>
+    <div class="col-sm-4">
+      <img src='images/person.jpg'>
+      <p>My team are always far more productive after we order from Sam's. 40% more productive, in fact.</p>
+      <small>Miss McAdam, CEO Workplace Analytics</small>
+    </div>
+    <div class="col-sm-4">
+      <img src='images/person.jpg'>
+      <p>We switched to Sam's Sarnies and won our first government contract the next day. Coincidence? I think not!</p>
+    </div>
+  </div>
+</div>
 
 
-  <h2>Tables</h2>
-  <p>Tables are used for holding data</p>
-  <table class='table'>
-    <tr>
-      <th>Name</th>
-      <th>College</th>
-    </tr>
-    <tr>
-      <td>Chanel</td>
-      <td>SFX</td>
-    </tr>
-    <tr>
-      <td>Dave</td>
-      <td>Hertford</td>
-    </tr>
-  </table>
+
+  <div id="mission">
+    <h2><small>Our mission</small><br />Join us in helping busy professionals eat healthily</h2>
+
+    <p class="lead">We believe that healthy workers are more productive workers.</p>
+    <p class="lead">Providing your team with a healthy lunch each day improves both motivation and morale.</p>
+    <p class="lead">We deliver healthy sandwiches, made with the best ingredients, to your workplace every day.</p>
+
+    <div id='social-buttons'>
+      <button class= "btn btn-lg btn-twitter">Twitter</button>
+      <button class="btn btn-lg btn-facebok">Facebook</button>
+      <button class="btn btn-lg btn-pinterest">Pinterest</button>
+    </div>
+  </div>
+</div>
 </body>
+
+
+<!-- Sandwich from: © Kosoff | <a href="http://www.dreamstime.com/">Dreamstime Stock Photos</a> & <a href="http://www.stockfreeimages.com/">Stock Free Images</a> -->
 </html>

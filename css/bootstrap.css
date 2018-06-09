@@ -5003,6 +5003,10 @@ a.badge:focus {
     margin-left: 500px;
     margin-right: 500px;
 }
+.col {
+      display: block;
+      width: 100%;
+  }
 .thumbnail {
   display: block;
   padding: 4px;

@@ -5,6 +5,23 @@
   <link href='css/bootstrap.css' rel='stylesheet'>
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <style>
+  * {
+      box-sizing: border-box;
+  }
+
+
+  .column {
+      float: left;
+      width: 33.33%;
+      padding: 5px;
+  }
+
+  /* Clearfix (clear floats) */
+  .row::after {
+      content: "";
+      clear: both;
+      display: table;
+  }
   </style>
 </head>
 
@@ -15,7 +32,7 @@
       <form role='form'>
         <input type="text" name="email"
         <meta name="viewport" content="width=device-width,
-    initial-scale=1.0"> >
+    initial-scale=1.0">
         <button class="btn btn-success" type="submit">Search</button>
       </form>
    <div class="logo">
@@ -28,33 +45,28 @@
     <h2><small>The Buzz</small><br />What are people saying?</h2>
     <div class="row">
       <div class="col">
-
+        <div class="column">
       <img class="img-circle" src='images/vegan.jpg'>
-      <blockquote
-      <p>These sandwiches are the best I've ever tasted, for sure. I now eat them every day - breakfast, lunch and dinner.</p>
-      <small>Mr Smith, Professional sandwich taster</small>
-    </blockquote>
+        </div>
     </div>
     <div class="col">
+        <div class="column">
       <img class="img-circle" src='images/veggie.jpg'>
-      <p>My team are always far more productive after we order from Sam's. 40% more productive, in fact.</p>
-      <small>Miss McAdam, CEO Workplace Analytics</small>
+        </div>
     </div>
     <div class="col">
+        <div class="column">
       <img class="img-circle" src='images/nocarbs.jpg'>
-      <p>We switched to Sam's Sarnies and won our first government contract the next day. Coincidence? I think not!</p>
+        </div>
     </div>
     <div class="col">
       <img class="img-circle" src='images/pescetarian.jpg'>
-      <p>We switched to Sam's Sarnies and won our first government contract the next day. Coincidence? I think not!</p>
     </div>
     <div class="col">
       <img class="img-circle" src='images/steak.jpg'>
-      <p>We switched to Sam's Sarnies and won our first government contract the next day. Coincidence? I think not!</p>
     </div>
     <div class="col">
       <img class="img-circle" src='images/cheat-day.jpg'>
-      <p>Cheat day made healthier!</p>
     </div>
   </div>
 </div>

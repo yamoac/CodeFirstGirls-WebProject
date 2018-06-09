@@ -4998,6 +4998,11 @@ a.badge:focus {
     font-size: 63px;
   }
 }
+.logo {
+    display: block;
+    margin-left: 500px;
+    margin-right: 500px;
+}
 .thumbnail {
   display: block;
   padding: 4px;

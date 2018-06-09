@@ -1143,18 +1143,9 @@ img {
 .img-circle {
   border-radius: 50%;
   position: relative;
-  float: left;
+  float: center;
   width:  350px;
   height: 350px;
-}
-.homepage-caption a h4 {
-    color: #000;
-    text-transform: uppercase;
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 0.3em;
-    text-align: center;
-    padding-bottom: 10px;
 }
 }
 hr {

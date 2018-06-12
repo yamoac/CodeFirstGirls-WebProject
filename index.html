@@ -3,6 +3,8 @@
 <head>
   <title>Recipe Room</title>
   <link href='css/bootstrap.css' rel='stylesheet'>
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <style>
   * {
@@ -67,19 +69,127 @@
     margin: 20px 40px 0;
     letter-spacing: -0.05em;
 }
+ul {
+display: flex;
+position: absolute;
+top: 5.4%;
+right: 75%;
+transform: translate(-50%,-50%);
+}
+ul li {
+list-style: none;
+}
+ul li a {
+width: 45px;
+height: 45px;
+background: #fff;
+text-align: center;
+line-height: 45px;
+font-size: 20px;
+margin: 0 10px;
+display: block;
+border-radius: 50%;
+position: relative;
+overflow: hidden;
+border: 3px solid #fff;
+z-index: 1;
+}
+ul li a .fa {
+position: relative;
+color: #262626;
+transition: .5s;
+z-index: 3;
+}
+ul li a:hover .fa {
+color: #fff;
+transform: rotateY(360deg);
+}
+ul li a:before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0000CD;
+  transition: .5s;
+  z-index: 2;
+}
+ul li a:hover:before {
+  top: 0;
+}
+ul li:nth-child(1) a:before {
+  background: #3b5999;
+}
+ul li:nth-child(2) a:before {
+  background: #55acee;
+}
+ul li:nth-child(3) a:before {
+  background: #e4405f;
+}
+
+img:hover {
+  cursor: default;
+  transform: rotateY(360deg);
+  transition: all 2s ease-in-out 0s;
+}
+
+.search-bar {
+display: flex;
+position: absolute;
+top: 5.4%;
+left: 90%;
+transform: translate(-50%,-50%);
+background: none;
+border: 0;
+border-bottom: 1px solid #000;
+height: 18px;
+width: 150px;
+color: #000;
+text-transform: uppercase;
+letter-spacing: 1px;
+outline: none !important;
+font-size: 11px;
+font-weight: 700;
+-webkit-appearance: none;
+position: absolute;
+-webkit-border-radius: 0;
+border-radius: 0;
+}
+
+form.search-icon button {
+  float: right;
+  width: 2.5%;
+  margin-top: -3.8%;
+  font-size: 15px;
+  cursor: pointer;
+}
+
   </style>
 </head>
 
 <body>
+ <nav>
+	<div>
   <center class="homepage-bar">
     <hr>
-  <a href="http://www.google.com" class="a1">HOME</a> | <a href="http://www.google.com" class="a1">ABOUT</a>  | <a href="http://www.google.com" class="a1">RECIPES</a>  | <a href="http://www.google.com" class="a1">DETOX</a>  | <a href="http://www.google.com" class="a1">GALLERY</a>
+  <a href="#" class="a1">ABOUT</a> | <a href="#" class="a1">RECIPES</a>  | <a href="#" class="a1">DETOX</a>  | <a href="#" class="a1">GALLERY</a>  | <a href="#" class="a1">CONTACT US</a>
     <hr>
+    <ul>
+    <li><a href="http://www.facebook.com"><i class="fa fa-facebook-f" aria-hidden="true"></i></a></li>
+    <li><a href="http://www.twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+    <li><a href="http://www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+    </ul>
+    <form class="search-icon">
+    <input class="search-bar" type="text" placeholder="Search...">
+    <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
   </center>
+ </nav>
 <div class=“container”>
     <div class="row">
    <div class="logo">
-    <img class='img-responsive' src='images/logo1.png'>
+    <a href="file:///C:/Users/User/Documents/GitHub/Recipe-Room/index.html"><img class='img-responsive' src='images/logo1.png'></a>
   </div>
 </div>
   </div>
@@ -92,7 +202,7 @@
         </br>
       <figure>
       <p class="homepage-caption">Vegan</p>
-      <img class="img-circle" class='img-responsive' src='images/vegan.jpg'>
+      <a href="#"><img class="img-circle" class='img-responsive' src='images/vegan.jpg'></a>
       <br>
     </br>
       <figcaption class="read-more">
@@ -107,7 +217,7 @@
         </br>
         <figure>
           <p class="homepage-caption">Veggie</p>
-      <img class="img-circle" class='img-responsive' src='images/veggie.jpg'>
+      <a href="#"><img class="img-circle" class='img-responsive' src='images/veggie.jpg'></a>
       <br>
     </br>
       <figcaption class="read-more">
@@ -122,7 +232,7 @@
         </br>
       <figure>
       <p class="homepage-caption">No Carbs</p>
-      <img class="img-circle" class='img-responsive' src='images/nocarbs.jpg'>
+      <a href="#"><img class="img-circle" class='img-responsive' src='images/nocarbs.jpg'></a>
       <br>
     </br>
       <figcaption class="read-more">
@@ -137,7 +247,7 @@
       </br>
       <figure>
       <p class="homepage-caption">Pescatarian</p>
-      <img class="img-circle" class='img-responsive' src='images/pescetarian.jpg'>
+      <a href="#"><img class="img-circle" class='img-responsive' src='images/pescatarian.jpg'></a>
       <br>
     </br>
       <figcaption class="read-more">
@@ -152,7 +262,7 @@
       </br>
       <figure>
         <p class="homepage-caption">Meatatarian</p>
-      <img class="img-circle" class='img-responsive' src='images/steak.jpg'>
+      <a href="#"><img class="img-circle" class='img-responsive' src='images/steak.jpg'></a>
       <br>
     </br>
       <figcaption class="read-more">
@@ -167,7 +277,7 @@
         </br>
       <figure>
           <p class="homepage-caption">Cheat Day</p>
-      <img class="img-circle" class='img-responsive' src='images/cheat-day.jpg'>
+      <a href="#"><img class="img-circle" class='img-responsive' src='images/cheat-day.jpg'></a>
       <br>
     </br>
       <figcaption class="read-more">
@@ -189,15 +299,18 @@
     <p class="lead">Healthy recipes to suit various dietary options</p>
     <p class="lead">Each day the Recipe Room is stocked with new ingrediets</p>
   </center>
-    <div id='social-buttons'>
-      <button class= "btn btn-lg btn-twitter">Twitter</button>
-      <button class="btn btn-lg btn-facebok">Facebook</button>
-      <button class="btn btn-lg btn-pinterest">Pinterest</button>
-    </div>
   </div>
 </div>
+
+<br>
+</br>
+
+<div id="site-info" class="a1">
+<center>
+Recipe Room © 2018 | <a href="#" class="a1">ABOUT</a> | <a href="#" class="a1">PRIVACY POLICY</a> | <a href="#" class="a1">CONTACT</a> | <a href="#" class="a1">SUBCRIBE</a>
+</center>
+</div>
+
 </body>
 
-
-<!-- Sandwich from: © Kosoff | <a href="http://www.dreamstime.com/">Dreamstime Stock Photos</a> & <a href="http://www.stockfreeimages.com/">Stock Free Images</a> -->
 </html>

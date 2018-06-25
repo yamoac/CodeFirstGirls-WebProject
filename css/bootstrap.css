@@ -1147,6 +1147,32 @@ img {
   width:  350px;
   height: 350px;
 }
+
+.img-circle2 {
+  border-radius: 50%;
+  position: relative;
+  float: center;
+  width:  250px;
+  height: 250px;
+  margin-left: 550px;
+  top: -200px;
+}
+
+.img-circle3 {
+  border-radius: 50%;
+  position: relative;
+  float: center;
+  width:  250px;
+  height: 250px;
+  margin-left: 750px;
+  top: -200px;
+}
+
+.move-up {
+margin-top: -250px;
+
+}
+
 }
 hr {
   margin-top: 20px;
@@ -1299,6 +1325,7 @@ p {
   font-size: 16px;
   font-weight: 300;
   line-height: 1.4;
+  color: orange;
 }
 @media (min-width: 768px) {
   .lead {
@@ -1589,23 +1616,44 @@ pre code {
 .container {
   padding-right: 15px;
   padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+  margin-left: 480px;
+  margin-right: 480px;
 }
-@media (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
+
+.post-container {
+  margin: 4px auto 0;
+  text-align: center;
+  max-width: 650px;
+  color: #FFF;
+  font-size: 21px;
+  margin-left: 380px;
 }
-@media (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
+
+.ingredients-list {
+    margin: 30px 0;
+    background: #FFFDD0;
+    border: 2px solid #000;
+    border-width: 2px 0;
+    padding: 30px;
+    position: relative;
+    margin-top: -10px;
 }
-@media (min-width: 1200px) {
-  .container {
-    width: 1170px;
-  }
+
+.ingredients-list2 {
+    margin: 30px 0;
+    background: #ffe4e1;
+    border-bottom: 2px solid #000;
+    border-width: 2px 0;
+    padding: 30px;
+    position: relative;
+    top: -30px;
+}
+
+.ingredients-style {
+  color: #2E8B57;
+  font-family: inherit;
+}
+
 }
 .container-fluid {
   padding-right: 15px;
@@ -5007,6 +5055,13 @@ a.badge:focus {
     display: block;
     margin-left: 500px;
     margin-right: 500px;
+}
+.logo2 {
+    display: block;
+    margin-left: 550px;
+    margin-right: 550px;
+    width: 200px;
+    height: 150px;
 }
 .col {
       display: block;

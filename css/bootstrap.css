@@ -1617,8 +1617,7 @@ pre code {
 .container {
   padding-right: 15px;
   padding-left: 15px;
-  margin-left: 480px;
-  margin-right: 480px;
+
 }
 
 .post-container {
@@ -1627,6 +1626,7 @@ pre code {
   max-width: 650px;
   color: #FFF;
   font-size: 21px;
+  margin-left: 380px;
 }
 
 .ingredients-list {
